@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/Sayac"
+            android:layout_width="127dp"
+            android:layout_height="36dp"
+            android:text="Time:10"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            tools:layout_editor_absoluteX="137dp"
+            tools:layout_editor_absoluteY="5dp" />
+
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="407dp"
+            android:layout_height="512dp"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="46dp">
+
+            <ImageView
+                android:id="@+id/cartman"
+                android:layout_width="130dp"
+                android:layout_height="175dp"
+                android:onClick="imageClick"
+                app:layout_column="0"
+                app:layout_row="0"
+                app:srcCompat="@drawable/cartman" />
+
+            <ImageView
+                android:id="@+id/johnny"
+                android:layout_width="130dp"
+                android:layout_height="175dp"
+                android:onClick="imageClick"
+                app:layout_column="1"
+                app:layout_row="0"
+                app:srcCompat="@drawable/johnny" />
+
+            <ImageView
+                android:id="@+id/jerry"
+                android:layout_width="130dp"
+                android:layout_height="175dp"
+                android:onClick="imageClick"
+                app:layout_column="2"
+                app:layout_row="0"
+                app:srcCompat="@drawable/jerry" />
+
+            <ImageView
+                android:id="@+id/oggy"
+                android:layout_width="130dp"
+                android:layout_height="175dp"
+                android:onClick="imageClick"
+                app:layout_column="0"
+                app:layout_row="1"
+                app:srcCompat="@drawable/oggy" />
+
+            <ImageView
+                android:id="@+id/darwin"
+                android:layout_width="130dp"
+                android:layout_height="175dp"
+                android:onClick="imageClick"
+                app:layout_column="1"
+                app:layout_row="1"
+                app:srcCompat="@drawable/darwin" />
+
+            <ImageView
+                android:id="@+id/buttercup"
+                android:layout_width="130dp"
+                android:layout_height="175dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:onClick="imageClick"
+                app:layout_column="2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_row="1"
+                app:srcCompat="@drawable/buttercup" />
+
+            <ImageView
+                android:id="@+id/dexter"
+                android:layout_width="130dp"
+                android:layout_height="175dp"
+                android:onClick="imageClick"
+                app:layout_column="0"
+                app:layout_row="2"
+                app:srcCompat="@drawable/dexter" />
+
+            <ImageView
+                android:id="@+id/gumball"
+                android:layout_width="130dp"
+                android:layout_height="175dp"
+                android:onClick="imageClick"
+                app:layout_column="1"
+                app:layout_row="2"
+                app:srcCompat="@drawable/gumball" />
+
+            <ImageView
+                android:id="@+id/kenny"
+                android:layout_width="130dp"
+                android:layout_height="175dp"
+                android:onClick="imageClick"
+                app:layout_column="2"
+                app:layout_row="2"
+                app:srcCompat="@drawable/kenny"/>
+
+        </androidx.gridlayout.widget.GridLayout>
+
+        <TextView
+            android:id="@+id/Score"
+            android:layout_width="128dp"
+            android:layout_height="43dp"
+            android:text="Score:"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            tools:layout_editor_absoluteX="140dp"
+            tools:layout_editor_absoluteY="557dp" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
